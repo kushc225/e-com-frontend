@@ -77,3 +77,11 @@
   text-decoration:none;
   box-sizing: border-box;
 }
+body{
+  height: 100vh;
+  width: 100vw;
+}
+
+.light {
+  --bg-red-color : 219, 68, 68, 1
+}

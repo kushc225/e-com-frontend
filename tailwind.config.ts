@@ -58,6 +58,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundColor : {
+        mainRed : "rgba(var(--bg-red-color))"
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
