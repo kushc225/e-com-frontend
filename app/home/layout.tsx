@@ -12,7 +12,7 @@ export default function DashboardLayout({
     <>
      <NavbarOfferentAlert/>
      <div className="w-full flex flex-col justify-center mt-5">
-        <div className="border-2 border-blue-300 ">
+        <div className="px-1 sm:px-2 md:px-6 lg:px-14 ">
         <Navbar />
       {children}
         </div>
