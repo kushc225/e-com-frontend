@@ -10,8 +10,8 @@ const Home = () => {
 
       <div className='px-2 h-[20rem] md:h-[24rem] overflow-scroll w-full mt-3 md:w-2/6'>
         {
-          ACCORDION_FAKE_DATA?.map(ele => {
-            return (<HomePageAccordion title={ele.title} values={ele.values} />)
+          ACCORDION_FAKE_DATA?.map((ele, idx : number) => {
+            return (<HomePageAccordion key={"HOME_PAGE" + idx} title={ele.title} values={ele.values} />)
           })
         }
       </div>
