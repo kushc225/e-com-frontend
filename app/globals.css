@@ -85,3 +85,34 @@ body{
 .light {
   --bg-red-color : 219, 68, 68, 1
 }
+
+
+
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Scrollbar color */
+  border-radius: 10px; /* Roundness of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Scrollbar color on hover */
+}
+
+/* For Firefox */
+.scrollable-element {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: #ce6d6d #f1f1f1; /* Scrollbar color and track color */
+}
+
+/* For Internet Explorer */
+.scrollable-element {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Auto-hide scrollbar */
+}
