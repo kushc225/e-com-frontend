@@ -1,5 +1,6 @@
 import { TimerProps } from "@/components/FlashWithTimer/FlashWithTimer";
 import { accordionType } from "@/types/accordion.type";
+import { FeatureProps } from "@/types/common.type";
 import { Product } from "@/types/product.type";
 
 export const ACCORDION_FAKE_DATA: accordionType[] = [
@@ -73,33 +74,6 @@ export const FLASH_SALTES_FAKE_DATA: TimerProps[] = [
 
 // PRODUCT FAKE DATA 
 export const PRODUCT: Product[] = [
-  // {
-  //   title: "Havit Hv-G92 Gamespace",
-  //   originalPrice: 33,
-  //   discountedPrice: 55,
-  //   discountPercentage: 34,
-  //   imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-  //   rating: 4,
-  //   reviewsCount: 34,
-  // },
-  // {
-  //   title: "Havit Hv-G92 Gamespace",
-  //   originalPrice: 33,
-  //   discountedPrice: 55,
-  //   discountPercentage: 34,
-  //   imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-  //   rating: 4,
-  //   reviewsCount: 34,
-  // },
-  // {
-  //   title: "Havit Hv-G92 Gamespace",
-  //   originalPrice: 33,
-  //   discountedPrice: 55,
-  //   discountPercentage: 34,
-  //   imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
-  //   rating: 4,
-  //   reviewsCount: 34,
-  // },
   {
     title: "Havit Hv-G92 Gamespace",
     originalPrice: 33,
@@ -144,5 +118,27 @@ export const PRODUCT: Product[] = [
     imageUrl: "https://images.unsplash.com/photo-1606813900088-9b1b3dc67050?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     rating: 4.7,
     reviewsCount: 96,
+  },
+];
+
+
+
+// ADDTIONAL INFO ABOUT OUR SERVICE 
+
+export const WHY_E_COM: FeatureProps[] = [
+  {
+    imagePath: '/bus.svg',
+    title: 'free and fast delivery',
+    description: 'Free order for all the delivery over ₹300',
+  },
+  {
+    imagePath: '/headphone.svg',
+    title: '24/7 customer service',
+    description: 'Friendly 24/7 customer support',
+  },
+  {
+    imagePath: '/protect.svg',
+    title: 'money back guarantee',
+    description: 'We return money within 30 days',
   },
 ];
