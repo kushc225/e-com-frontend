@@ -258,7 +258,7 @@ const Home = () => {
       {/* other option start  */}
       <div className='w-full mt-12 md:mt-32'>
         <div className='md:flex space-y-12 md:justify-around  md:space-y-0'>
-          {WHY_E_COM.map(ele => (<div className='flex flex-col justify-center items-center gap-3 '>
+          {WHY_E_COM.map((ele, idx : number) => (<div key={"WHY_E_COM" + idx} className='flex flex-col justify-center items-center gap-3 '>
             <ImageWrapper path={ele.imagePath} />
             <div className='text-center '>
               <h3 className='uppercase font-bold text-lg md:text-xl'>{ele.title}</h3>
