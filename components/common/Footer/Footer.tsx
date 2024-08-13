@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='bg-black pt-2 px-2  text-left pl-5 rounded-b-lg pb-2 sm:text-center sm:pl-0 sm:pt-5 lg:pt-10'  >
-          <p className='font-bold sm:text-xl lg:text-sm border-t-2 py-5 lg:py-2 border-slate-400/10 text-white/30'>© Copyright Rimel 2022. All right reserved</p>
+          <p className='font-bold sm:text-xl lg:text-sm border-t-2 py-5 lg:py-2 border-slate-400/10 text-white/30'>© Copyright kush 2024. All right reserved</p>
         </div>
       </div>
     </div>

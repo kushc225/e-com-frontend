@@ -5,17 +5,16 @@ import FlashWithTimer from '@/components/FlashWithTimer/FlashWithTimer'
 import ChooseCategories from '@/components/ChooseCategories/ChooseCategories'
 import HomePageAccordion from '@/components/Mapper/Accordion/HomePageAccordan'
 import HomeCorasual from '@/components/Mapper/HomeCarousel/HomeCarousel'
-import Bus from '@/public/bus.svg'
-import { IoIosPhonePortrait } from "react-icons/io";
-import { BsSmartwatch } from "react-icons/bs";
-import { CiCamera } from "react-icons/ci";
-import { CiHeadphones } from "react-icons/ci"; import { MdComputer } from "react-icons/md";
-import { GiConsoleController } from "react-icons/gi";
 import { ACCORDION_FAKE_DATA, PRODUCT, WHY_E_COM } from '@/utils/constant'
 import React, { FC, useRef } from 'react'
 import SliderButton from '@/components/common/SliderButton/SliderButton'
 import Image from 'next/image'
 import Footer from '@/components/common/Footer/Footer'
+import { CATEGORIES } from '@/components/CategoryConstant/CategoryConstant'
+
+
+
+
 
 
 const Home = () => {
@@ -131,35 +130,13 @@ const Home = () => {
           <Categories title='Categories' />
           <SliderButton scrollLeft={scrollCategoryLeft} scrollRight={scrollCategoryRight} />
         </div>
-        <div ref={categoryListRef} className='scroll-smooth mt-10 flex gap-20 justify-between overflow-x-scroll'>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={IoIosPhonePortrait} active={false} title='Phone' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={MdComputer} active={false} title='Computers' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={BsSmartwatch} active={true} title='Smart Watch' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={CiCamera} active={false} title='Camera' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={CiHeadphones} active={false} title='HeadPhone' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={GiConsoleController} active={false} title='Gaming' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={GiConsoleController} active={false} title='Gaming' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={GiConsoleController} active={false} title='Gaming' />
-          </div>
-          <div className='cursor-pointer'>
-            <ChooseCategories Component={GiConsoleController} active={false} title='Gaming' />
-          </div>
+        <div ref={categoryListRef} className="scroll-smooth mt-10 flex gap-20 justify-between overflow-x-scroll">
+      {CATEGORIES.map((category, index) => (
+        <div key={index} className="cursor-pointer">
+          <ChooseCategories Component={category.Component} active={category.active} title={category.title} />
         </div>
+      ))}
+    </div>
       </div>
       {/* Categories section end */}
 
@@ -258,7 +235,7 @@ const Home = () => {
       {/* other option start  */}
       <div className='w-full mt-12 md:mt-32'>
         <div className='md:flex space-y-12 md:justify-around  md:space-y-0'>
-          {WHY_E_COM.map((ele, idx : number) => (<div key={"WHY_E_COM" + idx} className='flex flex-col justify-center items-center gap-3 '>
+          {WHY_E_COM.map((ele, idx: number) => (<div key={"WHY_E_COM" + idx} className='flex flex-col justify-center items-center gap-3 '>
             <ImageWrapper path={ele.imagePath} />
             <div className='text-center '>
               <h3 className='uppercase font-bold text-lg md:text-xl'>{ele.title}</h3>
@@ -273,9 +250,11 @@ const Home = () => {
       {/* other option end */}
 
 
-        {/* fotter part start */}
-        <Footer/>
-        {/* fotter part end */}
+      {/* fotter part start */}
+      <div className='lg:mt-32'>
+      <Footer />
+      </div>
+      {/* fotter part end */}
     </div>
   )
 }

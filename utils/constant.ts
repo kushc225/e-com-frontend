@@ -1,6 +1,6 @@
 import { TimerProps } from "@/components/FlashWithTimer/FlashWithTimer";
 import { accordionType } from "@/types/accordion.type";
-import { FeatureProps } from "@/types/common.type";
+import { CategoryType, FeatureProps } from "@/types/common.type";
 import { Product } from "@/types/product.type";
 
 export const ACCORDION_FAKE_DATA: accordionType[] = [
@@ -79,7 +79,7 @@ export const PRODUCT: Product[] = [
     originalPrice: 33,
     discountedPrice: 55,
     discountPercentage: 34,
-    imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     rating: 4,
     reviewsCount: 34,
   },
@@ -88,7 +88,7 @@ export const PRODUCT: Product[] = [
     originalPrice: 33,
     discountedPrice: 55,
     discountPercentage: 34,
-    imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     rating: 4,
     reviewsCount: 34,
   },
@@ -97,7 +97,7 @@ export const PRODUCT: Product[] = [
     originalPrice: 299,
     discountedPrice: 249,
     discountPercentage: 17,
-    imageUrl: "https://images.unsplash.com/photo-1573209142051-0077d9aa69b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80",
     rating: 5,
     reviewsCount: 112,
   },
@@ -142,3 +142,6 @@ export const WHY_E_COM: FeatureProps[] = [
     description: 'We return money within 30 days',
   },
 ];
+
+
+

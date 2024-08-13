@@ -28,7 +28,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
     <Card className=" cursor-pointer max-w-xs bg-white shadow-sm rounded-lg h-[20rem] w-[20rem]">
       <CardHeader className="relative p-0 h-[12rem] overflow-hidden">
         <Image src={imageUrl} alt={title} width={100} height={100} className="w-full" />
-        <Badge variant="destructive" className="absolute top-2 left-2">
+        <Badge variant="destructive" className="absolute top-2 left-2 ">
           -{discountPercentage}%
         </Badge>
         <div className="absolute top-2 right-2 flex space-x-2">

@@ -1,3 +1,5 @@
+import { GetServerSideProps } from 'next';
+import i18next from '@/lib/i18N';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu'
 import { Label } from '@radix-ui/react-label'
 import React from 'react'
